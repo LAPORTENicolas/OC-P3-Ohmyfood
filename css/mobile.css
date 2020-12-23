@@ -1,0 +1,77 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: Roboto;
+}
+
+p {
+  font-family: Roboto;
+}
+
+.logo-container {
+  text-align: center;
+  -webkit-box-shadow: 0px 11px 11px -3px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 11px 11px -3px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 11px 11px -3px rgba(0, 0, 0, 0.75);
+}
+
+.logo-container img {
+  width: 45%;
+  padding: 1rem 0;
+}
+
+.location-container {
+  padding: 0.5rem 0;
+  text-align: center;
+  background-color: #EAEAEA;
+}
+
+.location-container p {
+  font-size: 0.6em;
+  padding: 0.4rem 0;
+  font-weight: bolder;
+  color: #353535;
+}
+
+.location-container p i {
+  margin-right: 10px;
+}
+
+.top-section {
+  text-align: center;
+  background-color: #F6F6F6;
+}
+.top-section h1 {
+  font-size: 1.2em;
+  padding: 1.5rem 3rem 0.5rem;
+}
+.top-section p {
+  color: #353535;
+  font-size: 1em;
+  margin: 0 1rem;
+}
+.top-section button {
+  margin: 1rem 0 2rem;
+}
+.top-section .btn {
+  font-family: Roboto;
+  box-shadow: 0px 3px 5px #A1A1A1;
+  padding: 0.7rem 0.7rem;
+  font-size: 0.8em;
+  border: none;
+  border-radius: 5rem;
+  color: white;
+}
+.top-section .btn-purple-degrade {
+  background: linear-gradient(70deg, #FF79DA, #9356DC);
+}
+
+.fonctionnement h2 {
+  font-size: 1em;
+  margin: 2rem 0 1rem 1rem;
+}
+
+/*# sourceMappingURL=mobile.css.map */
