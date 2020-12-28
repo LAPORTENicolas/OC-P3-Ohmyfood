@@ -1,0 +1,115 @@
+@import ../Utils/variables
+@import ../Base/app
+@import ../Components/components
+@import ../Layout/footer
+@import ../Layout/header
+
+.top-section
+  text-align: center
+  background-color: lighten($gris, 75%)
+  h2
+    font-size: 1.2em
+    padding: 1.5rem 3rem 0.5rem
+  p
+    color: $gris
+    font-size: 1em
+    margin: 0 1rem
+
+.fonctionnement
+  h2
+    font-size: 1em
+    margin: 2rem 0 1rem 1rem
+
+.list-fonctionnement
+  display: flex
+  flex-direction: column
+  align-items: center
+  padding-bottom: 2rem
+  .list-fonctionnement__conteneur
+    display: flex
+    background-color: lighten($gris, 75%)
+    box-shadow: 0px 5px 5px lighten($gris, 70%)
+    border-radius: 15px
+    margin: 10px 0
+    width: 80%
+    height: 3rem
+    span
+      background-color: $bleu
+      color: white
+      text-align: center
+      line-height: 20px
+      font-size: 0.8em
+      border-radius: 500rem
+      position: relative
+      margin: auto 0
+      height: 20px
+      width: 20px
+      right: 10px
+    p
+      line-height: 50px
+      font-size: 0.7em
+      font-weight: bold
+      .icon-base
+        font-size: 1.3em
+        margin: auto 20px auto 5px
+        color: lighten($gris, 20%)
+  .list-fonctionnement__conteneur--active
+    background-color: lighten($bleu, 35%)
+    p
+      .icon-base
+        color: $bleu
+
+.restaurants
+  background-color: lighten($gris, 75%)
+  padding-bottom: 3rem
+  h2
+    padding: 40px 0 20px 20px
+    font-size: 1.5em
+
+.list-restaurants
+  display: flex
+  flex-direction: column
+  align-items: center
+  .list-restaurants__conteneur
+    box-shadow: 0px 5px 10px lighten($gris, 70%)
+    width: 90%
+    height: 200px
+    margin: 0.5rem 0
+    .image-restaurants
+      border-radius: 10px 10px 0 0
+      overflow: hidden
+      max-height: 140px
+      display: flex
+      span
+        z-index: 2
+        position: absolute
+        font-size: 0.8em
+        background-color: $vert
+        color: darken($vert, 50%)
+        padding: 0.3rem 0.5rem
+        margin-top: 0.5rem
+        border-radius: 0.1rem
+        left: 70%
+      img
+        z-index: 1
+        margin-top: -50px
+        object-position: center
+        height: 100%
+        width: 100%
+  .text-restaurants
+    display: flex
+    justify-content: space-between
+    background-color: #FFF
+    border-radius: 0 0 10px 10px
+    padding: 0.8rem 0
+    i
+      margin: auto 10px auto 0
+      font-size: 1em
+      color: lighten($gris, 20%)
+    div
+      display: flex
+      flex-direction: column
+      font-size: 0.8em
+      margin-left: 0.5rem
+      h3
+        padding-bottom: 0.2rem
