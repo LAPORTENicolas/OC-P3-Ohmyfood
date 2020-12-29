@@ -1,0 +1,76 @@
+@import ../Utils/variables
+@import ../Base/app
+@import ../Components/components
+@import ../Layout/footer
+@import ../Layout/header-menu
+
+main
+  background-color: lighten($gris, 75%)
+
+.delicesens--img
+  background-image: url("../../images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg")
+
+.enchante--img
+  background-image: url("../../images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg")
+
+.francaise--img
+  background-image: url("../../images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg")
+
+.paletteGout--img
+  background-image: url("../../images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg")
+
+.top-section
+  background-position: top
+  background-size: cover
+  height: 12rem
+  display: block
+  .top-section__conteneur
+    height: 80px
+    width: 100%
+    display: flex
+    vertical-align: center
+    justify-content: space-around
+    background-color: lighten($gris, 75%)
+    border-radius: 20px 20px 0 0
+    position: absolute
+    top: 200px
+    h2
+      font-family: Shrikhand
+      font-weight: lighter
+      font-size: 1.3em
+      margin: auto 0
+    i
+      margin: auto 0
+
+.cat-vue
+  padding: 1.5rem 1rem 0 1rem
+  h3
+    font-weight: lighter
+    font-size: 1em
+    border-bottom: 3px solid $vert
+    width: 2rem
+    padding-bottom: 0.1rem
+  &__conteneur
+    background-color: #FFF
+    margin: 1rem 0
+    padding: 0.5rem
+    box-shadow: 0px 5px 5px lighten($gris, 70%)
+    border-radius: 10px
+    div
+      display: flex
+      justify-content: space-between
+      p
+        margin: 0.1rem 0
+        font-size: 0.8em
+      span
+        font-size: 0.8em
+    h4
+      font-size: 0.9em
+      max-width: 70%
+
+.cat-vue--grand_padding
+  padding: 2.5rem 1rem 0 1rem
+
+.boutton__conteneur
+  display: flex
+  justify-content: center

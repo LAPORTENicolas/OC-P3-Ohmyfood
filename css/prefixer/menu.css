@@ -1,0 +1,195 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: Roboto;
+  font-weight: bold;
+}
+
+p, span {
+  font-family: Roboto;
+}
+
+button {
+  margin: 1rem 0 2rem;
+}
+
+a {
+  text-decoration: none;
+  color: initial;
+}
+
+.btn {
+  font-family: Roboto;
+  -webkit-box-shadow: 0px 3px 5px #cecece;
+          box-shadow: 0px 3px 5px #cecece;
+  padding: 0.7rem 0.7rem;
+  font-size: 0.8em;
+  border: none;
+  border-radius: 5rem;
+  color: white;
+}
+
+.btn:hover {
+  -webkit-box-shadow: 0px 3px 5px #b5b5b5;
+          box-shadow: 0px 3px 5px #b5b5b5;
+}
+
+.btn-purple-degrade {
+  background: -o-linear-gradient(280deg, #FF79DA, #9356DC);
+  background: linear-gradient(170deg, #FF79DA, #9356DC);
+}
+
+.btn-purple-degrade:hover {
+  background: -o-linear-gradient(280deg, #ff93e1, #a16be0);
+  background: linear-gradient(170deg, #ff93e1, #a16be0);
+}
+
+.btn-grand-largeur {
+  width: 150px;
+}
+
+footer {
+  background-color: #383838;
+  padding-left: 2rem;
+  padding-bottom: 1rem;
+}
+footer .logo-text {
+  padding: 0.7rem 0;
+  font-size: 0.8em;
+  color: white;
+  font-family: Shrikhand;
+  font-weight: lighter;
+}
+footer ul li {
+  list-style: none;
+  color: white;
+  font-family: Roboto;
+  font-size: 0.6em;
+  padding-bottom: 0.5rem;
+}
+footer ul .imp-footer {
+  font-weight: bold;
+}
+footer ul i {
+  width: 20px;
+}
+
+header h1 {
+  font-family: Shrikhand;
+  font-size: 1.5em;
+  padding: 0.3rem 0;
+  margin: auto 0;
+  text-align: center;
+}
+header i {
+  color: #686868;
+  position: absolute;
+  top: 13px;
+  left: 20px;
+}
+
+main {
+  background-color: #f4f4f4;
+}
+
+.delicesens--img {
+  background-image: url("../../images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg");
+}
+
+.enchante--img {
+  background-image: url("../../images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg");
+}
+
+.francaise--img {
+  background-image: url("../../images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg");
+}
+
+.paletteGout--img {
+  background-image: url("../../images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg");
+}
+
+.top-section {
+  background-position: top;
+  background-size: cover;
+  height: 12rem;
+  display: block;
+}
+.top-section .top-section__conteneur {
+  height: 80px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  vertical-align: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  background-color: #f4f4f4;
+  border-radius: 20px 20px 0 0;
+  position: absolute;
+  top: 200px;
+}
+.top-section .top-section__conteneur h2 {
+  font-family: Shrikhand;
+  font-weight: lighter;
+  font-size: 1.3em;
+  margin: auto 0;
+}
+.top-section .top-section__conteneur i {
+  margin: auto 0;
+}
+
+.cat-vue {
+  padding: 1.5rem 1rem 0 1rem;
+}
+.cat-vue h3 {
+  font-weight: lighter;
+  font-size: 1em;
+  border-bottom: 3px solid #99E2D0;
+  width: 2rem;
+  padding-bottom: 0.1rem;
+}
+.cat-vue__conteneur {
+  background-color: #FFF;
+  margin: 1rem 0;
+  padding: 0.5rem;
+  -webkit-box-shadow: 0px 5px 5px #e8e8e8;
+          box-shadow: 0px 5px 5px #e8e8e8;
+  border-radius: 10px;
+}
+.cat-vue__conteneur div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.cat-vue__conteneur div p {
+  margin: 0.1rem 0;
+  font-size: 0.8em;
+}
+.cat-vue__conteneur div span {
+  font-size: 0.8em;
+}
+.cat-vue__conteneur h4 {
+  font-size: 0.9em;
+  max-width: 70%;
+}
+
+.cat-vue--grand_padding {
+  padding: 2.5rem 1rem 0 1rem;
+}
+
+.boutton__conteneur {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uL2Jhc2UvX2FwcC5zYXNzIiwiLi4vUGFnZXMvbWVudS5jc3MiLCIuLi9jb21wb25lbnRzL19jb21wb25lbnRzLnNhc3MiLCIuLi9sYXlvdXQvX2Zvb3Rlci5zYXNzIiwiLi4vbGF5b3V0L19oZWFkZXItbWVudS5zYXNzIiwiLi4vUGFnZXMvbWVudS5zYXNzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0UsU0FBQTtFQUNBLFVBQUE7QUNDRjs7QURDQTtFQUNFLG1CQUFBO0VBQ0EsaUJBQUE7QUNFRjs7QURBQTtFQUNFLG1CQUFBO0FDR0Y7O0FDWkE7RUFDRSxtQkFBQTtBRGVGOztBQ2JBO0VBQ0UscUJBQUE7RUFDQSxjQUFBO0FEZ0JGOztBQ2RBO0VBQ0UsbUJBQUE7RUFDQSx1Q0FBQTtVQUFBLCtCQUFBO0VBQ0Esc0JBQUE7RUFDQSxnQkFBQTtFQUNBLFlBQUE7RUFDQSxtQkFBQTtFQUNBLFlBQUE7QURpQkY7O0FDZkE7RUFDRSx1Q0FBQTtVQUFBLCtCQUFBO0FEa0JGOztBQ2hCQTtFQUNFLHdEQUFBO0VBQUEscURBQUE7QURtQkY7O0FDakJBO0VBQ0Usd0RBQUE7RUFBQSxxREFBQTtBRG9CRjs7QUNqQkE7RUFDRSxZQUFBO0FEb0JGOztBRTdDQTtFQUNFLHlCQUFBO0VBQ0Esa0JBQUE7RUFDQSxvQkFBQTtBRmdERjtBRS9DRTtFQUNFLGlCQUFBO0VBQ0EsZ0JBQUE7RUFDQSxZQUFBO0VBQ0Esc0JBQUE7RUFDQSxvQkFBQTtBRmlESjtBRS9DSTtFQUNFLGdCQUFBO0VBQ0EsWUFBQTtFQUNBLG1CQUFBO0VBQ0EsZ0JBQUE7RUFDQSxzQkFBQTtBRmlETjtBRWhESTtFQUNFLGlCQUFBO0FGa0ROO0FFakRJO0VBQ0UsV0FBQTtBRm1ETjs7QUd4RUU7RUFDRSxzQkFBQTtFQUNBLGdCQUFBO0VBQ0EsaUJBQUE7RUFDQSxjQUFBO0VBQ0Esa0JBQUE7QUgyRUo7QUcxRUU7RUFDRSxjQUFBO0VBQ0Esa0JBQUE7RUFDQSxTQUFBO0VBQ0EsVUFBQTtBSDRFSjs7QUlqRkE7RUFDRSx5QkFBQTtBSm9GRjs7QUlsRkE7RUFDRSxvR0FBQTtBSnFGRjs7QUluRkE7RUFDRSwrRUFBQTtBSnNGRjs7QUlwRkE7RUFDRSxzRkFBQTtBSnVGRjs7QUlyRkE7RUFDRSx5RkFBQTtBSndGRjs7QUl0RkE7RUFDRSx3QkFBQTtFQUNBLHNCQUFBO0VBQ0EsYUFBQTtFQUNBLGNBQUE7QUp5RkY7QUl4RkU7RUFDRSxZQUFBO0VBQ0EsV0FBQTtFQUNBLG9CQUFBO0VBQUEsb0JBQUE7RUFBQSxhQUFBO0VBQ0Esc0JBQUE7RUFDQSx5QkFBQTtNQUFBLDZCQUFBO0VBQ0EseUJBQUE7RUFDQSw0QkFBQTtFQUNBLGtCQUFBO0VBQ0EsVUFBQTtBSjBGSjtBSXpGSTtFQUNFLHNCQUFBO0VBQ0Esb0JBQUE7RUFDQSxnQkFBQTtFQUNBLGNBQUE7QUoyRk47QUkxRkk7RUFDRSxjQUFBO0FKNEZOOztBSTFGQTtFQUNFLDJCQUFBO0FKNkZGO0FJNUZFO0VBQ0Usb0JBQUE7RUFDQSxjQUFBO0VBQ0EsZ0NBQUE7RUFDQSxXQUFBO0VBQ0Esc0JBQUE7QUo4Rko7QUk3RkU7RUFDRSxzQkFBQTtFQUNBLGNBQUE7RUFDQSxlQUFBO0VBQ0EsdUNBQUE7VUFBQSwrQkFBQTtFQUNBLG1CQUFBO0FKK0ZKO0FJOUZJO0VBQ0Usb0JBQUE7RUFBQSxvQkFBQTtFQUFBLGFBQUE7RUFDQSx5QkFBQTtNQUFBLHNCQUFBO1VBQUEsOEJBQUE7QUpnR047QUkvRk07RUFDRSxnQkFBQTtFQUNBLGdCQUFBO0FKaUdSO0FJaEdNO0VBQ0UsZ0JBQUE7QUprR1I7QUlqR0k7RUFDRSxnQkFBQTtFQUNBLGNBQUE7QUptR047O0FJakdBO0VBQ0UsMkJBQUE7QUpvR0Y7O0FJbEdBO0VBQ0Usb0JBQUE7RUFBQSxvQkFBQTtFQUFBLGFBQUE7RUFDQSx3QkFBQTtNQUFBLHFCQUFBO1VBQUEsdUJBQUE7QUpxR0YiLCJmaWxlIjoibWVudS5jc3MifQ== */

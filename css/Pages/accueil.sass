@@ -2,7 +2,7 @@
 @import ../Base/app
 @import ../Components/components
 @import ../Layout/footer
-@import ../Layout/header
+@import ../Layout/header-accueil
 
 .top-section
   text-align: center
@@ -69,47 +69,49 @@
 .list-restaurants
   display: flex
   flex-direction: column
-  align-items: center
-  .list-restaurants__conteneur
-    box-shadow: 0px 5px 10px lighten($gris, 70%)
-    width: 90%
-    height: 200px
-    margin: 0.5rem 0
-    .image-restaurants
-      border-radius: 10px 10px 0 0
-      overflow: hidden
-      max-height: 140px
-      display: flex
-      span
-        z-index: 2
-        position: absolute
-        font-size: 0.8em
-        background-color: $vert
-        color: darken($vert, 50%)
-        padding: 0.3rem 0.5rem
-        margin-top: 0.5rem
-        border-radius: 0.1rem
-        left: 70%
-      img
-        z-index: 1
-        margin-top: -50px
-        object-position: center
-        height: 100%
-        width: 100%
-  .text-restaurants
+  a
     display: flex
-    justify-content: space-between
-    background-color: #FFF
-    border-radius: 0 0 10px 10px
-    padding: 0.8rem 0
-    i
-      margin: auto 10px auto 0
-      font-size: 1em
-      color: lighten($gris, 20%)
-    div
+    justify-content: center
+    .list-restaurants__conteneur
+      box-shadow: 0px 5px 10px lighten($gris, 70%)
+      width: 90%
+      height: 200px
+      margin: 0.5rem 0
+      .image-restaurants
+        border-radius: 10px 10px 0 0
+        overflow: hidden
+        max-height: 140px
+        display: flex
+        span
+          z-index: 2
+          position: absolute
+          font-size: 0.8em
+          background-color: $vert
+          color: darken($vert, 50%)
+          padding: 0.3rem 0.5rem
+          margin-top: 0.5rem
+          border-radius: 0.1rem
+          left: 70%
+        img
+          z-index: 1
+          margin-top: -50px
+          object-position: center
+          height: 100%
+          width: 100%
+    .text-restaurants
       display: flex
-      flex-direction: column
-      font-size: 0.8em
-      margin-left: 0.5rem
-      h3
-        padding-bottom: 0.2rem
+      justify-content: space-between
+      background-color: #FFF
+      border-radius: 0 0 10px 10px
+      padding: 0.8rem 0
+      i
+        margin: auto 10px auto 0
+        font-size: 1em
+        color: lighten($gris, 20%)
+      div
+        display: flex
+        flex-direction: column
+        font-size: 0.8em
+        margin-left: 0.5rem
+        h3
+          padding-bottom: 0.2rem
