@@ -1,12 +1,13 @@
 @import ../Utils/variables
+@import ../Utils/mixins
 @import ../Base/app
 @import ../Components/components
 @import ../Layout/footer
 @import ../Layout/header-accueil
 
 .top-section
+  +background-color(75%)
   text-align: center
-  background-color: lighten($gris, 75%)
   h2
     font-size: 1.2em
     padding: 1.5rem 3rem 0.5rem
@@ -25,10 +26,10 @@
   flex-direction: column
   align-items: center
   padding-bottom: 2rem
-  .list-fonctionnement__conteneur
+  &__conteneur
+    +box-shadows(70%)
+    +background-color(75%)
     display: flex
-    background-color: lighten($gris, 75%)
-    box-shadow: 0px 5px 5px lighten($gris, 70%)
     border-radius: 15px
     margin: 10px 0
     width: 80%
@@ -53,14 +54,14 @@
         font-size: 1.3em
         margin: auto 20px auto 5px
         color: lighten($gris, 20%)
-  .list-fonctionnement__conteneur--active
-    background-color: lighten($bleu, 35%)
+  &__conteneur--active
+    +background-color(35%)
     p
       .icon-base
         color: $bleu
 
 .restaurants
-  background-color: lighten($gris, 75%)
+  +background-color(75%)
   padding-bottom: 3rem
   h2
     padding: 40px 0 20px 20px
@@ -72,8 +73,8 @@
   a
     display: flex
     justify-content: center
-    .list-restaurants__conteneur
-      box-shadow: 0px 5px 10px lighten($gris, 70%)
+    &__conteneur
+      +box-shadows(70%)
       width: 90%
       height: 200px
       margin: 0.5rem 0

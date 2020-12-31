@@ -1,11 +1,12 @@
 @import ../Utils/variables
+@import ../Utils/mixins
 @import ../Base/app
 @import ../Components/components
 @import ../Layout/footer
 @import ../Layout/header-menu
 
 main
-  background-color: lighten($gris, 75%)
+  +background-color(70%)
 
 .delicesens--img
   background-image: url("../../images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg")
@@ -24,13 +25,13 @@ main
   background-size: cover
   height: 12rem
   display: block
-  .top-section__conteneur
+  &__conteneur
     height: 80px
     width: 100%
     display: flex
     vertical-align: center
     justify-content: space-around
-    background-color: lighten($gris, 75%)
+    +background-color(70%)
     border-radius: 20px 20px 0 0
     position: absolute
     top: 200px
@@ -54,7 +55,7 @@ main
     background-color: #FFF
     margin: 1rem 0
     padding: 0.5rem
-    box-shadow: 0px 5px 5px lighten($gris, 70%)
+    +box-shadows(70%)
     border-radius: 10px
     div
       display: flex
