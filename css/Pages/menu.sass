@@ -1,12 +1,12 @@
 @import ../Utils/variables
 @import ../Utils/mixins
 @import ../Base/app
-@import ../Components/components
+@import ../Components/bouton
 @import ../Layout/footer
 @import ../Layout/header-menu
 
 main
-  +background-color(70%)
+  +background-color(75%)
 
 .delicesens--img
   background-image: url("../../images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg")
@@ -25,13 +25,13 @@ main
   background-size: cover
   height: 12rem
   display: block
-  &__conteneur
+  &__titre
     height: 80px
     width: 100%
     display: flex
     vertical-align: center
     justify-content: space-around
-    +background-color(70%)
+    +background-color(75%)
     border-radius: 20px 20px 0 0
     position: absolute
     top: 200px
@@ -51,7 +51,7 @@ main
     border-bottom: 3px solid $vert
     width: 2rem
     padding-bottom: 0.1rem
-  &__conteneur
+  &__article
     background-color: #FFF
     margin: 1rem 0
     padding: 0.5rem
@@ -68,10 +68,10 @@ main
     h4
       font-size: 0.9em
       max-width: 70%
+  &--grand_padding
+    @extend .cat-vue
+    padding: 2.5rem 1rem 0 1rem
 
-.cat-vue--grand_padding
-  padding: 2.5rem 1rem 0 1rem
-
-.boutton__conteneur
+.bouton__conteneur
   display: flex
   justify-content: center
