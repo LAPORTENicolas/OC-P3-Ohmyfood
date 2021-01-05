@@ -2,8 +2,23 @@
 @import ../Utils/mixins
 @import ../Base/app
 @import ../Components/bouton
+@import ../Components/animations
 @import ../Layout/footer
 @import ../Layout/header-menu
+
+
+
+.cat-1
+  animation: affichage-prog ease 1s
+  animation-delay: 0s
+
+.cat-2
+  animation: affichage-prog ease 1s
+  animation-delay: 0.5s
+
+.cat-3
+  animation: affichage-prog ease 1s
+  animation-delay: 1s
 
 main
   +background-color(75%)
@@ -45,6 +60,8 @@ main
 
 .cat-vue
   padding: 1.5rem 1rem 0 1rem
+  opacity: 0
+  animation-fill-mode: forwards
   h3
     font-weight: lighter
     font-size: 1em
@@ -54,20 +71,51 @@ main
   &__article
     background-color: #FFF
     margin: 1rem 0
-    padding: 0.5rem
+    display: flex
+    justify-content: space-between
     +box-shadows(70%)
     border-radius: 10px
-    div
-      display: flex
-      justify-content: space-between
-      p
-        margin: 0.1rem 0
-        font-size: 0.8em
-      span
-        font-size: 0.8em
-    h4
+    .text__conteneur
+      width: 90%
+      padding: 0.5rem
+      h4
       font-size: 0.9em
-      max-width: 70%
+      div
+        display: flex
+        justify-content: space-between
+        p
+          margin: 0.1rem 0
+          padding: 0 0.5rem 0 0
+          font-size: 0.8em
+          white-space: nowrap
+          overflow: hidden
+          text-overflow: ellipsis
+        span
+          font-size: 0.8em
+        i
+          background-color: $vert
+          color: white
+    .animation__conteneur
+      width: 0
+      overflow: hidden
+      background-color: $vert
+      border-radius: 0 10px 10px 0
+      display: flex
+      justify-content: center
+      i
+        color: white
+        margin: auto
+  &__article:hover
+    cursor: pointer
+    .text__conteneur
+      min-width: 80%
+    .animation__conteneur
+      animation: cloche ease 2s
+      animation-delay: 0.3s
+      i
+        transform: rotateZ(360deg)
+        transition: 0.5s
+        transition-delay: 0.3s
   &--grand_padding
     @extend .cat-vue
     padding: 2.5rem 1rem 0 1rem
