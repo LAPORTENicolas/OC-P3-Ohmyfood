@@ -2,8 +2,36 @@
 @import ../Utils/mixins
 @import ../Base/app
 @import ../Components/bouton
+@import ../Components/animations
 @import ../Layout/footer
 @import ../Layout/header-accueil
+
+.ecran-chargement
+  z-index: 2
+  position: absolute
+  background: linear-gradient(170deg, lighten($rose, 5%), lighten($bleu, 5%))
+  height: 200%
+  width: 100%
+  display: flex
+  justify-content: center
+  animation: disparition ease 0.5s
+  animation-fill-mode: forwards
+  animation-delay: 2.8s
+  .__chargeur
+    margin: 60% 0
+    height: 50px
+    width: 50px
+    border: 5px solid #FFF
+    border-radius: 50px
+    border-top: 5px solid rgba(0,0,0,0)
+    background-color: rgb(0,0,0,0)
+    animation: rotation-chargeur linear 3s
+    animation-delay: 0.5s
+
+main
+  opacity: 0
+  animation: affichage-prog forwards 0.4s
+  animation-delay: 2.7s
 
 .top-section
   +background-color(75%)
@@ -112,6 +140,8 @@
       margin: auto 10px auto 0
       font-size: 1em
       color: lighten($gris, 20%)
+    i:hover
+      background-color: red
     div
       display: flex
       flex-direction: column

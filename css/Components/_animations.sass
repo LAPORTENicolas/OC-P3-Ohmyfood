@@ -2,8 +2,25 @@
   from
     opacity: 0
 
+  99%
+    display: none
+
   to
     opacity: 1
+
+@keyframes disparition
+  from
+    opacity: 1
+
+  99%
+    height: 100%
+    width: 100%
+
+  to
+    height: 0
+    width: 0
+    display: none
+    opacity: 0
 
 @keyframes cloche
   from
@@ -19,3 +36,40 @@
   to
     display: none
     width: 0px
+
+@keyframes rotation-chargeur
+  from
+    transform: rotateZ(0deg)
+    border-color: #FFF
+    border-top: 5px solid rgba(0,0,0,0)
+
+  35%
+    transform: rotateZ(350deg)
+    border-top: 5px solid rgba(0,0,0,0)
+
+  40%
+    transform: rotateZ(360deg)
+    border-top: 5px solid rgba(0,0,0,0)
+
+  45%
+    transform: rotateZ(370deg)
+    border-color: #FFF
+    border-top: 5px solid rgba(0,0,0,0)
+
+  80%
+    transform: rotateZ(720deg)
+    border-top: 5px solid rgba(0,0,0,0)
+
+  85%
+    transform: rotateZ(730deg)
+    border-top: 5px solid rgba(0,0,0,0)
+
+  90%
+    transform: rotateZ(740deg)
+    opacity: 1
+    border-top: 5px solid rgba(0,0,0,0)
+
+  to
+    transform: rotateZ(740deg)
+    border-top: 5px solid rgba(0,0,0,0)
+    opacity: 0
