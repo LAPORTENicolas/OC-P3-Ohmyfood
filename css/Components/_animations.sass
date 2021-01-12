@@ -73,3 +73,21 @@
     transform: rotateZ(740deg)
     border-top: 5px solid rgba(0,0,0,0)
     opacity: 0
+
+@keyframes anti-scroll
+  from
+    overflow-y: hidden
+  99%
+    overflow-y: hidden
+  to
+    overflow-y: auto
+
+@keyframes icon-coeur
+  from
+    transform: translateY(-5px) rotate(0deg)
+
+  90%
+    transform: translateX(0) translateY(-15px) rotate(170deg)
+
+  to
+    transform: translateY(-19px) translateX(-2px) rotate(180deg)
