@@ -63,7 +63,7 @@ main
   flex-direction: column
   align-items: center
   padding-bottom: 2rem
-  @media (min-width: 1023px) and (max-width: 1440px)
+  @media (min-width: 1023px) and (max-width: 1920px)
     display: flex
     flex-direction: unset
     justify-content: space-around
@@ -115,25 +115,21 @@ main
 .list-restaurants
   display: flex
   flex-direction: column
-  a
-    display: flex
-    justify-content: center
+  align-items: center
   @media (min-width: 768px) and (max-width: 1023px)
-    flex-direction: unset
+    flex-direction: column
+    flex-wrap: unset
     justify-content: center
-    flex-wrap: wrap
-    a
-      width: 50%
     .image-restaurants > span
-      margin-left: 35%
-  @media (min-width: 1023px) and (max-width: 1440px)
+        right: 6%
+  @media (min-width: 1023px) and (max-width: 1920px)
     flex-direction: unset
-    justify-content: center
+    justify-content: space-around
     flex-wrap: wrap
-    a
-      width: 20em
     .image-restaurants > span
       margin-left: .5%
+    .restaurants__conteneur
+      width: 30%
 
 .restaurants__conteneur
   +box-shadows(70%)
@@ -160,8 +156,9 @@ main
       z-index: 1
       margin-top: -50px
       object-position: center
-      height: 100%
       width: 100%
+      @media (min-width: 768px) and (max-width: 1023px)
+        margin-top: -150px
   .text-restaurants
     display: flex
     justify-content: space-between
