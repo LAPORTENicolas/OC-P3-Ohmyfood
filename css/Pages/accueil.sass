@@ -6,10 +6,10 @@
 @import ../Layout/footer
 @import ../Layout/header-accueil
 
-/*html
+html
   animation: forwards 2.8s anti-scroll
 
-/*.ecran-chargement
+.ecran-chargement
   z-index: 5
   position: fixed
   background-color: $bleu
@@ -40,7 +40,7 @@
       animation: rotation-chargeur linear 3s
       animation-delay: 0.5s
 
-/*main
+main
   opacity: 0
   animation: affichage-prog forwards 0.4s
   animation-delay: 2.7s
@@ -89,9 +89,6 @@
   margin: 10px 0
   width: 80%
   height: 3rem
-  &--active
-    @extend .fonctionnement__etape
-    +background-color(65%)
   span
     background-color: $bleu
     color: white
@@ -108,10 +105,15 @@
     line-height: 50px
     font-size: .8em
     font-weight: bold
-    .icon-base
+    i
       font-size: 1.2em
       margin: auto 20px auto 5px
       color: lighten($gris, 20%)
+  &--active
+    @extend .fonctionnement__etape
+    background-color: lighten($bleu, 35%)
+    .icon-base
+      color: $bleu
   @media (min-width: 1439px) and (max-width: 1920px)
     font-size: 1.4em
     padding: .8rem

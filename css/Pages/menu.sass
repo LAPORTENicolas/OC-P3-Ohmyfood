@@ -22,18 +22,45 @@
 
 main
   +background-color(75%)
+  @media (min-width: 767px) and (max-width: 1920px)
+    padding: 5% 20% 0 20%
+    background-size: cover
+
+.delicesens
+  background-image: url("../../images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg")
+
+.enchante
+  background-image: url("../../images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg")
+
+.francaise
+  background-image: url("../../images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg")
+
+.paletteGout
+  background-image: url("../../images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg")
 
 .delicesens--img
   background-image: url("../../images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg")
+  @media (min-width: 767px) and (max-width: 1920px)
+    background: transparent
 
 .enchante--img
   background-image: url("../../images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg")
+  @media (min-width: 767px) and (max-width: 1920px)
+    background: transparent
 
 .francaise--img
   background-image: url("../../images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg")
+  @media (min-width: 767px) and (max-width: 1920px)
+    background: transparent
 
 .paletteGout--img
   background-image: url("../../images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg")
+  @media (min-width: 767px) and (max-width: 1920px)
+    background: transparent
+
+.menu__list
+  +background-color(75%)
+  border-radius: 20px 20px 0 0
 
 .top-section
   background-position: top
@@ -57,6 +84,13 @@ main
       margin: auto 0
     i
       margin: auto 0
+  @media (min-width: 767px) and (max-width: 1920px)
+    height: 2rem
+    &__titre
+      position: unset
+      top: 0
+      h2
+        font-size: 1.5em
 
 .cat-vue
   padding: 1.5rem 1rem 0 1rem
@@ -68,6 +102,8 @@ main
     border-bottom: 3px solid $vert
     width: 2rem
     padding-bottom: 0.1rem
+    @media (min-width: 1023px) and (max-width: 1920px)
+      font-size: 1.5em
   &__article
     background-color: #FFF
     margin: 1rem 0
@@ -86,15 +122,23 @@ main
         p
           margin: 0.1rem 0
           padding: 0 0.5rem 0 0
-          font-size: 0.8em
           white-space: nowrap
           overflow: hidden
           text-overflow: ellipsis
         span
-          font-size: 0.8em
+          font-weight: bold
         i
           background-color: $vert
           color: white
+    @media (min-width: 1023px) and (max-width: 1920px)
+      h4
+        font-size: 1.8em
+      div
+        p
+          font-size: 1.2em
+        span
+          font-size: 1.2em
+          font-weight: bold
     .animation__conteneur
       width: 0
       overflow: hidden
