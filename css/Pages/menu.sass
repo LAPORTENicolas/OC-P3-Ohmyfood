@@ -85,12 +85,12 @@ main
     i
       margin: auto 0
   @media (min-width: 767px) and (max-width: 1920px)
-    height: 2rem
-    &__titre
-      position: unset
-      top: 0
-      h2
-        font-size: 1.5em
+  height: 2rem
+  &__titre
+    position: unset
+    top: 0
+    h2
+      font-size: 1.8em
 
 .cat-vue
   padding: 1.5rem 1rem 0 1rem
@@ -115,7 +115,7 @@ main
       width: 90%
       padding: 0.5rem
       h4
-      font-size: 0.9em
+      font-size: 1em
       div
         display: flex
         justify-content: space-between
@@ -125,20 +125,16 @@ main
           white-space: nowrap
           overflow: hidden
           text-overflow: ellipsis
+          font-weight: lighter
+          font-size: 0.9em
         span
+          font-size: 0.9em
           font-weight: bold
         i
           background-color: $vert
           color: white
-    @media (min-width: 1023px) and (max-width: 1920px)
-      h4
-        font-size: 1.8em
-      div
-        p
-          font-size: 1.2em
-        span
-          font-size: 1.2em
-          font-weight: bold
+  @media (min-width: 1023px) and (max-width: 1920px)
+  &__article
     .animation__conteneur
       width: 0
       overflow: hidden
