@@ -66,7 +66,8 @@ main
   background-position: top
   background-size: cover
   height: 12rem
-  display: block
+  display: flex
+  flex-direction: column-reverse
   &__titre
     height: 80px
     width: 100%
@@ -85,12 +86,13 @@ main
     i
       margin: auto 0
   @media (min-width: 767px) and (max-width: 1920px)
-  height: 2rem
+    height: 2rem
   &__titre
     position: unset
     top: 0
     h2
       font-size: 1.8em
+      padding-top: 1rem
 
 .cat-vue
   padding: 1.5rem 1rem 0 1rem
@@ -158,7 +160,7 @@ main
         transition-delay: 0.3s
   &--grand_padding
     @extend .cat-vue
-    padding: 2.5rem 1rem 0 1rem
+    padding: .5rem 1rem 0 1rem
 
 .bouton__conteneur
   display: flex
